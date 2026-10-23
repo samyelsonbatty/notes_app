@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:notes_app/widgets/custom_note_item.dart';
 
 class NotesListView extends StatelessWidget {
-  const new({super.key});
+  const NotesListView({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,10 +10,11 @@ class NotesListView extends StatelessWidget {
       padding: const EdgeInsets.symmetric(vertical: 16.0),
       child: ListView.builder(
         padding: EdgeInsets.zero,
+        itemCount: 10, // temporary, until notes come from a database
         itemBuilder: (context, index) {
-          return Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4.0),
-            child: const NoteItem(),
+          return const Padding(
+            padding: EdgeInsets.symmetric(vertical: 4.0),
+            child: NoteItem(),
           );
         },
       ),
