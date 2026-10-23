@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class AddNoteBottonSheet extends StatelessWidget {
+class AddNoteBottomSheet extends StatelessWidget {
   const new({super.key});
 
   @override
