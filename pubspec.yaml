@@ -37,6 +37,8 @@ dependencies:
   font_awesome_flutter: ^11.0.0
   hive_ce: ^2.8.0
   hive_ce_flutter: ^2.0.0
+  flutter_bloc: ^9.1.1
+  meta: ^1.19.0
 
 dev_dependencies:
   flutter_test:
